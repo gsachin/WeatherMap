@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CloudsCell" id="KGk-i7-Jjw" customClass="CloudsCell" customModule="WeatherMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-ai-qI9">
+                        <rect key="frame" x="8" y="11" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="GF6-Ht-uIg"/>
+                            <constraint firstAttribute="height" constant="21" id="w0U-dB-cCM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-WN-tJl">
+                        <rect key="frame" x="58" y="11" width="254" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="254" id="D4j-zD-cr1"/>
+                            <constraint firstAttribute="height" constant="21" id="FQu-u2-r6J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="hbV-WN-tJl" secondAttribute="bottom" constant="3" id="JTV-Oy-AKU"/>
+                    <constraint firstItem="TYO-ai-qI9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KeC-Ef-qmb"/>
+                    <constraint firstItem="hbV-WN-tJl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Rjl-oN-yzM"/>
+                    <constraint firstItem="TYO-ai-qI9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="YaO-fH-qOb"/>
+                    <constraint firstItem="hbV-WN-tJl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="mEm-KX-1TI"/>
+                    <constraint firstItem="hbV-WN-tJl" firstAttribute="leading" secondItem="TYO-ai-qI9" secondAttribute="trailing" constant="8" id="uKq-Jf-GwP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TYO-ai-qI9" secondAttribute="bottom" constant="3" id="zba-jV-KTB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="all" destination="hbV-WN-tJl" id="64C-1a-fuG"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
